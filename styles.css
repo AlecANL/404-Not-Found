@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+.l-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content {
+  min-height: calc(100vh - 60px);
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-info,
+  .section-scare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.header-main-title {
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-main-title {
+    font-size: 2rem;
+    padding: 1rem 4rem;
+  }
+}
+
+.img-scarecrow {
+  padding: 3rem;
+  -webkit-animation: sideToUp 1.5s infinite alternate;
+          animation: sideToUp 1.5s infinite alternate;
+}
+
+@-webkit-keyframes sideToUp {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes sideToUp {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.main-title {
+  font-size: 3.9rem;
+  font-weight: 700;
+  line-height: 5rem;
+  padding: 2.5rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-title {
+    font-size: 5.5rem;
+  }
+}
+
+span {
+  display: block;
+}
+
+.page-paragraph {
+  padding: 2rem;
+  font-size: 1.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-paragraph {
+    width: 70%;
+  }
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  margin: 2rem;
+  padding: 2rem 2.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    width: 30%;
+  }
+}
+
+.btn:hover {
+  background-color: #4d4d4d;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn--black {
+  background-color: #333;
+  color: #fff;
+}
+
+.main-footer p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */
